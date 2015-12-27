@@ -2,7 +2,7 @@ from setuptools import setup
 from setuptools.command.test import test as TestCommand
 import sys
 
-#import io, codecs, os
+# import io, codecs, os
 
 class Tox(TestCommand):
     def finalize_options(self):
