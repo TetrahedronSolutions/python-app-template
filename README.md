@@ -17,21 +17,21 @@ using yeoman.io to scaffold our python projects.
 ---
 
 # Tools
+## Flake8
+[Documentation](http://flake8.readthedocs.org/en/latest/config.html)
 
 ## Virtualenv
 This is your best friend. Virtualenv is a applications that isolates your local environments python libary/packages with a fresh install python. This is good in order to limit the things that you need to install in order to run your application and not be affected by other existing modules.
 
 ### How to:
-#### install `sudo apt-get install virtualenv`
-
-#### Use `virtualenv <environment-name>`
+install `sudo apt-get install virtualenv`
+Use `virtualenv <environment-name>`
 
 ## Docker
 This could be an alternative to virtualenv its just a bigger environment isolation. Instead of python libary level it would be a kernel level umbrella.
 
 ## Tox
 [Tox](http://tox.readthedocs.org/en/latest/example/basic.html)
-
 Tox is a generic virtualenv management and test command line tool you can use for:
 
 * checking your package installs correctly with different Python versions and interpreters
@@ -61,7 +61,7 @@ argparse==1.2.1
 coverage==4.0.3
 flake8==2.2.4
 flake8-docstrings==0.2.4
-hacking==0.10.2
+hacking>=0.10.2
 mccabe==0.2.1
 ```
 
