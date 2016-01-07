@@ -2,6 +2,7 @@ Template: Python applications
 
 ## Inspire by
 [Jeff knupp](https://www.jeffknupp.com/blog/2013/08/16/open-sourcing-a-python-project-the-right-way/)
+
 [Open Stack](http://openstack.com/)
 
 ---
@@ -24,19 +25,22 @@ using yeoman.io to scaffold our python projects.
 This is your best friend. Virtualenv is a applications that isolates your local environments python libary/packages with a fresh install python. This is good in order to limit the things that you need to install in order to run your application and not be affected by other existing modules.
 
 ### How to:
-install `sudo apt-get install virtualenv`
+Install `sudo apt-get install virtualenv`
+
 Use `virtualenv <environment-name>`
 
 ## Docker
-This could be an alternative to virtualenv its just a bigger environment isolation. Instead of python libary level it would be a kernel level umbrella.
+This could be an alternative to virtualenv its just a bigger environment isolation. Instead of python library level it would be a kernel level umbrella.
+
+The use of docker containers should be done in both in a production or development environment.
 
 ## Tox
 [Tox](http://tox.readthedocs.org/en/latest/example/basic.html)
 Tox is a generic virtualenv management and test command line tool you can use for:
 
-* checking your package installs correctly with different Python versions and interpreters
-* running your tests in each of the environments, configuring your test tool of choice
-* acting as a front-end to Continuous Integration servers, greatly reducing boilerplate and merging CI and shell-based testing.
+* Checking your package installs correctly with different Python versions and interpreters
+* Running your tests in each of the environments, configuring your test tool of choice
+* Acting as a front-end to Continuous Integration servers, greatly reducing boilerplate and merging CI and shell-based testing.
 
 .... SO in order words this tools allows you to manage your virtual environments
 with a wide range of tests not just py27. Handles that all installations and
@@ -69,4 +73,5 @@ mccabe==0.2.1
 
 ## Git Flow
 [Git-flow](http://nvie.com/posts/a-successful-git-branching-model/)
-[atlassian](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+
+[Atlassian](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
