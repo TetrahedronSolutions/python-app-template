@@ -1,5 +1,6 @@
 argparse==1.2.1
 coverage==4.0.3
+click==6.2
 flake8==2.2.4
 flake8-docstrings==0.2.4
 hacking==0.10.2
@@ -18,4 +19,5 @@ tox==2.3.1
 virtualenv==13.1.2
 virtualenv-clone==0.2.6
 virtualenvwrapper==4.7.1
+web.py==0.37
 wsgiref==0.1.2

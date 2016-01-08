@@ -1,4 +1,3 @@
-
 class Contribute:
     def __init__(self):
         pass
