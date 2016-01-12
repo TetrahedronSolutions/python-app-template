@@ -4,4 +4,4 @@ class Contribute:
         pass
 
     def contribution_list(self):
-        pass
+        return "potato,cars,animals".split(',')
