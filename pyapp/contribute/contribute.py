@@ -1,7 +1,6 @@
+import urllib
 
 class Contribute:
-    def __init__(self):
-        pass
-
-    def contribution_list(self):
-        return "potato,cars,animals".split(',')
+    def GET(self):
+        github = 'https://api.github.com/orgs/TetrahedronSolutions/members'
+        return urllib.urlopen(github)
