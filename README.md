@@ -18,21 +18,43 @@ using yeoman.io to scaffold our python projects.
 ---
 
 # Tools
-## Flake8
+
+## Webframework
+* [Django](https://www.djangoproject.com/)
+* [Pecan](http://www.pecanpy.org/)
+* [Web.py](http://webpy.org/)
+
+
+
+## Flake8 & Hacking
 [Documentation](http://flake8.readthedocs.org/en/latest/config.html)
 
+Hacking is an opestack a version of their prefered linting.
+
 ## Virtualenv
-This is your best friend. Virtualenv is a applications that isolates your local environments python libary/packages with a fresh install python. This is good in order to limit the things that you need to install in order to run your application and not be affected by other existing modules.
+This is your best friend. Virtualenv is a applications that isolates your local environments python library/packages with a fresh install python. This is good in order to limit the things that you need to install in order to run your application and not be affected by other existing modules.
 
 ### How to:
-Install `sudo apt-get install virtualenv`
+Install `pip install virtualenv`
 
 Use `virtualenv <environment-name>`
 
-## Docker
-This could be an alternative to virtualenv its just a bigger environment isolation. Instead of python library level it would be a kernel level umbrella.
+Prefered virtualenv name: `virtualenv .venv`
 
-The use of docker containers should be done in both in a production or development environment.
+## Docker
+This could be an alternative to virtualenv it's just a bigger environment isolation. Instead of python library level it would be a kernel level umbrella.
+
+The use of docker containers should be done in both in a production or development environment .
+
+### How to build and run:
+
+Build:
+`docker build -t <group-name>/<app-name> .`
+
+Example: `docker build -t tetrasol/pyapp .`
+
+Run:
+`docker run -d --name pyapp -p 8080:8080 tetrasol/pyapp`
 
 ## Tox
 [Tox](http://tox.readthedocs.org/en/latest/example/basic.html)
@@ -44,10 +66,12 @@ Tox is a generic virtualenv management and test command line tool you can use fo
 
 .... SO in order words this tools allows you to manage your virtual environments
 with a wide range of tests not just py27. Handles that all installations and
-testing is done with various environments with you having to do it by had.
+testing is done with various environments.
 
 
 ## Pip
+Pip install: `sudo apt-get install -y python-pip`
+
 This is your package manager. if you need to install a lib you will need to add
 you will run `pip install <lib>` or you will create a `requirements.txt` file
 in order to keep track of all the lib that belong to that program and the

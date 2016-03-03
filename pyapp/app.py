@@ -1,13 +1,8 @@
 import web
+from contribute.contribute import Contribute
+from api.urls import urls
 
-urls = (
-    '/', 'index'
-)
-
-class index:
-    def GET(self):
-        return "Hello, world!"
+app = web.application(urls, globals())
 
 if __name__ == "__main__":
-    app = web.application(urls, globals())
     app.run()

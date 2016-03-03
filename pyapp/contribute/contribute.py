@@ -1,6 +1,6 @@
-class Contribute:
-    def __init__(self):
-        pass
+import urllib
 
-    def contribution_list(self):
-        pass
+class Contribute:
+    def GET(self):
+        github = 'https://api.github.com/orgs/TetrahedronSolutions/members'
+        return urllib.urlopen(github)
